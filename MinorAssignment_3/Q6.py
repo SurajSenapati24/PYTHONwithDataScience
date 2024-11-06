@@ -6,4 +6,4 @@ def palindrome(s):
     else:
         False
 user=input("Enter a String: ")
-print(palindrome(user))
+print("Is Palindrome: ",palindrome(user))
