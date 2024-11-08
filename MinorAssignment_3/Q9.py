@@ -18,12 +18,9 @@ def decimalToBinary(num):
         binary = str(digit) + binary
         num //= 2
     return binary
-user = int(input("Enter '1' to convert from binary to decimal and\n '2' to convert from decimal to binary: "))
-if user == 1:
-    num = int(input("Enter a binary number: "))
-    print("Decimal number is: ", binaryToDecimal(num))
-elif user == 2:
-    num = int(input("Enter a decimal number: "))
-    print("Binary number is: ", decimalToBinary(num))
-else:
-    print("Invalid input. Please enter 1 or 2.")
+
+bnum = int(input("Enter a binary number: "))
+print("Decimal number is: ", binaryToDecimal(bnum))
+num = int(input("Enter a decimal number: "))
+print("Binary number is: ", decimalToBinary(num))
+
