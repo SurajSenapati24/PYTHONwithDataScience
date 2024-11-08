@@ -1,7 +1,7 @@
-def replace_vowels(input_string):
+def rep_vowels(str):
     vowels = "aeiouAEIOU"
     result = ""
-    for char in input_string:
+    for char in str:
         if char in vowels:
             result += "*"
         else:
@@ -9,4 +9,4 @@ def replace_vowels(input_string):
     return result
 
 user= input("Enter a string: ")
-print("String after replacing vowels:", replace_vowels(user))
+print("String after replacing vowels:", rep_vowels(user))
