@@ -1,9 +1,9 @@
-def remove_punctuation(input_string):
-    punctuation = '''!()-[]{};:'"\,<>./?@#$%^&*_~'''
+def remove_pun(str):
+    pun = '''!()-[]{};:'"\,<>./?@#$%^&*_~'''
     result = ""
-    for char in input_string:
-        if char not in punctuation:
+    for char in str:
+        if char not in pun:
             result += char
     return result
-input_string = input("Enter a string: ")
-print("String without punctuation:", remove_punctuation(input_string))
+str = input("Enter a string: ")
+print("String without punctuation:", remove_pun(str))
