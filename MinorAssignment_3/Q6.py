@@ -1,7 +1,6 @@
 #Define a function to check if a given string is a palindrome. Example: madam ⟲ madam, racecar ⟲ racecar.
 def palindrome(s):
-    n=s[::-1]
-    if s==n:
+    if s==s[::-1]:
         return True
     else:
         False
