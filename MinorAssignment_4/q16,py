@@ -1,0 +1,14 @@
+# Function to check if the list is sorted
+def is_sorted(lst):
+    return lst == sorted(lst)
+
+# Main program
+user_input = input("Enter list: ")
+# Convert input string to a list of integers
+lst = list(map(int, user_input.split()))
+
+# Check if the list is sorted and display the appropriate message
+if is_sorted(lst):
+    print("The list is already sorted.")
+else:
+    print("The list is not sorted.")
