@@ -11,7 +11,7 @@ def number_to_words(num):
     digits.reverse()
     for digit in digits:
         s += map[digit] + " "
-    return s.strip() 
+    return s
 
 user = int(input("Enter a number: "))
 print(f"The number in words is: {number_to_words(user)}")
