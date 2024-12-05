@@ -13,5 +13,6 @@ print(tlds)
 # e) Update the value for the key ‘Sweden’ to ‘se’ (correct TLD).
 tlds['Sweden']='se'
 print(tlds)
+# f) Use dictionary comprehension to reverse the keys and values.
 tlds_rev={val:key for key,val in tlds.items()}
 print(tlds_rev)
