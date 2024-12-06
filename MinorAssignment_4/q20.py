@@ -6,7 +6,7 @@ for rating in range(1, 6):
 print("\nStatistics:")
 print(f"Minimum: {min(ratings)}")
 print(f"Maximum: {max(ratings)}")
-print(f"Range: {max(ratings) - min(ratings)}")
+print(f"Range: {min(ratings)} - {max(ratings)}")
 print(f"Mean: {statistics.mean(ratings):.2f}")
 print(f"Median: {statistics.median(ratings)}")
 print(f"Mode: {statistics.mode(ratings)}")
