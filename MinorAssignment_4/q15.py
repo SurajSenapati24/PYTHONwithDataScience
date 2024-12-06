@@ -1,44 +1,18 @@
 import random
 
-# Function to randomly fill a 4x4 matrix with 0s and 1s
-def generate_matrix():
-    matrix = [[random.randint(0, 1) for _ in range(4)] for _ in range(4)]
-    return matrix
+def gen_matrix(r, c):
+    return [[random.randint(0, 1) for _ in range(c)] for _ in range(r)]
 
-# Function to find the row with the most 1s
-def find_row_with_most_ones(matrix):
-    row_index = -1
-    max_ones = -1
-    for i, row in enumerate(matrix):
-        ones_count = row.count(1)
-        if ones_count > max_ones:
-            max_ones = ones_count
-            row_index = i
-    return row_index
+def max_row(m):
+    return [sum(r) for r in m].index(max([sum(r) for r in m]))
 
-# Function to find the column with the most 1s
-def find_column_with_most_ones(matrix):
-    column_index = -1
-    max_ones = -1
-    for j in range(4):
-        ones_count = sum(1 for i in range(4) if matrix[i][j] == 1)
-        if ones_count > max_ones:
-            max_ones = ones_count
-            column_index = j
-    return column_index
+def max_col(m):
+    return max(range(len(m[0])), key=lambda c: sum(row[c] for row in m))
 
-# Main program
-matrix = generate_matrix()
+m = gen_matrix(4, 4)
 
-# Print the matrix
-print("Matrix:")
-for row in matrix:
-    print("".join(map(str, row)))
+for r in m:
+    print("".join(map(str, r)))
 
-# Find the row and column with the most 1s
-largest_row_index = find_row_with_most_ones(matrix)
-largest_column_index = find_column_with_most_ones(matrix)
-
-# Display the results
-print(f"The largest row index: {largest_row_index}")
-print(f"The largest column index: {largest_column_index}")
+print(f"The largest row index: {max_row(m)}")
+print(f"The largest column index: {max_col(m)}")

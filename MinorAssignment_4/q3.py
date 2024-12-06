@@ -1,48 +1,34 @@
-
 lst = []
 while True:
-    print("\nMenu:")
-    print("1. Create a list of N integers")
-    print("2. Display the list elements")
-    print("3. Insert an element at a specific position")
-    print("4. Delete an element at a given position")
-    print("5. Exit")
-    choice=int(input("Enter your choice: "))
+    print("\nMenu:\n1. Create a list\n2. Display list\n3. Insert element\n4. Delete element\n5. Exit")
+    choice = int(input("Enter your choice: "))
+    
     if choice == 1:
-       N = int(input("Enter the number of elements (N): "))
-       lst = [i for i in range(N)]
-       print("List created successfully.")
+        lst = list(range(int(input("Enter the number of elements (N): "))))
+        print("List created successfully.")
     elif choice == 2:
         print("List elements:", lst if lst else "The list is empty.")
     elif choice == 3:
         if lst:
             try:
-                element = int(input("Enter the element to insert: "))
-                position = int(input("Enter the position (0-based index): "))
-                if 0 <= position <= len(lst):
-                    lst.insert(position, element)
-                    print("Element inserted successfully.")
-                else:
-                    print("Invalid position.")
+                elem = int(input("Element to insert: "))
+                pos = int(input("Position (0-based): "))
+                lst.insert(pos, elem) if 0 <= pos <= len(lst) else print("Invalid position.")
             except ValueError:
-                print("Invalid input. Please enter valid integers.")
+                print("Enter valid integers.")
         else:
-            print("The list is empty. Create a list first.")
+            print("Create a list first.")
     elif choice == 4:
         if lst:
             try:
-                position = int(input("Enter the position (0-based index) to delete: "))
-                if 0 <= position < len(lst):
-                    removed_element = lst.pop(position)
-                    print(f"Element {removed_element} removed successfully.")
-                else:
-                    print("Invalid position.")
+                pos = int(input("Position to delete (0-based): "))
+                print(f"Removed: {lst.pop(pos)}") if 0 <= pos < len(lst) else print("Invalid position.")
             except ValueError:
-                print("Invalid input. Please enter a valid integer.")
+                print("Enter a valid integer.")
         else:
-            print("The list is empty. Create a list first.")
+            print("Create a list first.")
     elif choice == 5:
-        print("Exiting the program. Goodbye!")
+        print("Goodbye!")
         break
     else:
-        print("Invalid choice. Please try again.")
+        print("Invalid choice.")
