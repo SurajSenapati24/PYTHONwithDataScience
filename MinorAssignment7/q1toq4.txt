@@ -1,0 +1,20 @@
+1. How does the read method differ from the readlines method?
+read method: Reads the entire content of the file as a single string.
+readlines method: Reads the entire content of the file and returns it as a list of strings, where each string is a line from the file.
+
+
+2. What is the purpose of JSON serialization?
+JSON serialization converts Python objects into JSON strings, allowing them to be easily shared or stored. This is particularly useful 
+for data exchange between a Python program and external systems or applications (like APIs or web services).
+
+
+3. Why is the pickle module considered a security risk in some cases?
+The pickle module can execute arbitrary code during deserialization because it reconstructs objects. If untrusted or malicious 
+data is unpickled, it may execute harmful code, leading to security vulnerabilities.
+
+
+4. What is the significance of file modes ('r', 'w', 'a', 'b') in Python?
+'r' (read): Opens the file for reading. An error occurs if the file doesn't exist.
+'w' (write): Opens the file for writing, truncating the file if it exists or creating a new file.
+'a' (append): Opens the file for appending content at the end of the file.
+'b' (binary): Used in conjunction with 'r', 'w', or 'a' to work with binary files (e.g., images or executables).
