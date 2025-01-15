@@ -4,7 +4,7 @@ a=a.reshape(2,3)
 print("Original Array before flatten/ravel: ")
 print(a)
 a_f=a.flatten()
-a_f[2]=34
+a_f[1]=34
 print("Flattened a: ",a_f)
 a_r=a.ravel()
 a_r[2]=44

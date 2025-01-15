@@ -1,0 +1,42 @@
+ What will be the output produced on executing function inverse1 when the following input is entered
+ as the value of variable num:
+ (a)5
+ ->output:Inverse : 0.2
+Function inverse completed
+
+
+ (b)0 
+ -> ZeroDivisionError : Division by zero is not allowed.
+Function inverse completed
+
+ 
+ (c)2.0
+ ->Inverse : 0.5
+Function inverse completed
+
+(d)x
+->ValueError : Invalid input , not a number.
+Function inverse completed
+ 
+(e)None
+->ValueError : Invalid input , not a number.
+Function inverse completed
+
+
+ def inverse1 ():
+ t r y :
+ num = input(”Enter the number: ”)
+ num = float (num)
+ i nverse = 1.0 / num
+ except ValueError :
+ print (” ValueError : Invalid input , not a number.”)
+ except TypeError :
+ print (”TypeError : Invalid type for operation .”)
+ except ZeroDivisionError :
+ print (” ZeroDivisionError : Division by zero is not allowed .”)
+ except Exception as e:
+ print ( f”Unexpected error : {e}”)
+ else :
+ print ( f”Inverse : {inverse }”)
+ f i n ally :
+ print (” Function inverse completed”)

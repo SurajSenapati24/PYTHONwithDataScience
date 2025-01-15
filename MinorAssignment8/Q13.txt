@@ -1,0 +1,6 @@
+ Identify two exceptions that may be raised while executing the following statement:
+ 
+ result = a + b
+
+ TypeError
+ NameError

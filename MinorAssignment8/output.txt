@@ -1,0 +1,4 @@
+example1@example.com
+info@spammer.com
+spam@spammer.com
+test_email@example.org

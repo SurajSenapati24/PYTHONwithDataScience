@@ -1,0 +1,21 @@
+import csv
+
+# Specify the CSV file name
+file_name = "sample.csv"
+
+try:
+    # Open and read the CSV file
+    with open(file_name, mode="r") as file:
+        reader = csv.DictReader(file)  # Read as a dictionary
+        data = list(reader)  # Convert to a list of dictionaries
+
+    # Output the result
+    print(f"Successfully read {len(data)} rows from '{file_name}'.")
+    print("First 5 rows of the CSV data as dictionaries:")
+    for row in data[:5]:  # Display only the first 5 rows
+        print(row)
+
+except FileNotFoundError:
+    print(f"Error: The file '{file_name}' does not exist.")
+except Exception as e:
+    print(f"Unexpected error: {e}")
