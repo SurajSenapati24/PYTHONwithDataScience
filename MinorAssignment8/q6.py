@@ -1,7 +1,7 @@
 import csv
 
 # Open the CSV file in append mode
-with open('grades.csv', mode='a', newline='') as file:
+with open('grades.csv', mode='a') as file:
     writer = csv.writer(file)
 
     # Get student data from the instructor

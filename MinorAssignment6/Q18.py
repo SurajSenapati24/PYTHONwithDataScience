@@ -1,6 +1,6 @@
-import numpy as np
 import pandas as pd
-array = np.random.randint(0, 100, size=(4, 4))
-print(array)
-df = pd.DataFrame(array)
-print(df.iloc[:, 0])
+import numpy as np
+df = pd.DataFrame(np.random.randint(1, 100, (5, 3)), columns=["A", "B", "C"])
+first_col = df["A"]
+print("DataFrame:\n", df)
+print("First column as Series:\n", first_col)

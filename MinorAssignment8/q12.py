@@ -7,12 +7,12 @@ def extract_unique_emails(input_file, output_file):
             content = file.read()
         
         # Regular expression to match email addresses
-        email_pattern = r'[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}'
+        email_pattern = r'[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.com'
         
         # Extract all email addresses
         emails = re.findall(email_pattern, content)
         
-        # Remove duplicates by converting to a set
+        # Remove duplicates by converting to a seta
         unique_emails = sorted(set(emails))  # Sort the emails for better readability
         
         # Write unique email addresses to the output file
