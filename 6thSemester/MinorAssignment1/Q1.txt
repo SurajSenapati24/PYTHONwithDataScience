@@ -1,0 +1,10 @@
+What is the significance of classes in Python programming, and how do they contribute to object
+oriented programming?
+Ans->Classes in Python are the blueprint for creating objects. They define the structure (attributes) and behavior (methods) 
+of objects. The significance of classes lies in how they help implement Object-Oriented Programming (OOP) concepts like 
+encapsulation, inheritance, and polymorphism.
+By using classes:
+-Code becomes more organized and reusable.
+-We can create multiple objects from the same class without rewriting code.
+-It allows real-world modeling, making complex programs easier to manage and understand.
+-In short, classes are the foundation of OOP in Python, promoting clean, modular, and scalable code.
