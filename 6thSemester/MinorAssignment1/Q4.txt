@@ -1,0 +1,9 @@
+In Python, access control to class attributes is handled using naming conventions, not strict rules like some other languages.
+-Public attributes are accessible from anywhere. They are written normally like self.name.
+-Protected attributes use a single underscore like self._age, and by convention, should be accessed only within the class 
+and its subclasses.
+-Private attributes use double underscores like self.__password. Python performs name mangling, so these can’t be accessed 
+directly from outside the class.
+-This helps in hiding sensitive data and controlling how the data inside a class is used, which supports the concept of 
+encapsulation in object-oriented programming.
+
