@@ -1,0 +1,18 @@
+Question: DefineNaturalLanguageProcessing (NLP). Provide three real-world applications of NLP and explain
+ how they impact society.
+Answer: 
+Natural Language Processing is a branch of AI that enables computers to understand, interpret and 
+generate Human Language in a meaningful way. It uses computer linguistics along with deep learning, 
+machine learning models that are processed and trained over a Large Natural language data.
+Three real-world applications of NLP are:
+1) Sentiment Analysis- Companies uses sentiment Analysis to understand the reviews of the customers 
+on a large scale through their written reviews. Its impact is that the government and companies uses 
+this models to analyse reviews of people on a large scale and improve their services.
+
+2)Virtual Assistants- Assistants like google Assistant, siri, Alexa analyses the voice commands and 
+work according to the commands. Its impact in the society is that this models can be used by person 
+with disablities to interact with devices, providing hands on Assistance and automating works.
+
+3)Language Translators- Translators like google translate helps in tanslating different languages 
+making communication easy. Its impact in the society is that it can be used to break the langauge 
+barriers between different countries and people and make communication easy.

@@ -1,0 +1,4 @@
+Explain the following terms and their significance in NLP:
+ • Tokenization- Tok
+ • Stemming
+ • Lemmatization
