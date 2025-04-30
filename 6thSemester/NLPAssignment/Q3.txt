@@ -1,0 +1,18 @@
+What is Part-of-Speech (POS) tagging? Discuss its importance with an example.
+
+Part-of-Speech (POS) tagging is the process of marking up words in a text with their corresponding 
+part of speech (noun, verb, adjective, etc.) based on both their definition and context.
+Importance: POS tagging is crucial because:
+
+It disambiguates words that can function as different parts of speech
+It helps in understanding sentence structure and grammatical relationships
+It's foundational for more complex NLP tasks like parsing, named entity recognition, and sentiment 
+analysis.
+It enables accurate information extraction from text
+
+Example: In the sentence "They can fish," without context, "can" could be a modal verb or a noun 
+(container), and "fish" could be a verb or a noun. POS tagging would correctly identify them based 
+on context:
+
+"They can fish" (They [pronoun] can [modal verb] fish [verb]) - meaning they are able to fish
+"They can fish" (They [pronoun] can [verb] fish [noun]) - meaning they put fish in cans
